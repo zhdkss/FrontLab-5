@@ -1,0 +1,64 @@
+.taskForm {
+    background-color: var(--background-secondary);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px var(--shadow-primary);
+    margin-bottom: 25px;
+    border: 1px solid var(--border-primary);
+}
+
+.formTitle {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.inputGroup {
+    margin-bottom: 15px;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.inputGroup input[type="text"],
+.inputGroup select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}
+
+.inputGroup input[type="text"]:focus,
+.inputGroup select:focus {
+    outline: none;
+    border-color: var(--text-accent);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--text-accent) 20%, transparent);
+}
+
+.submitButton {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: var(--background-accent);
+    color: var(--text-on-accent);
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+    background-color: color-mix(in srgb, var(--background-accent) 85%, black);
+}

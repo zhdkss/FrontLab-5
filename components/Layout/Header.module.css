@@ -1,0 +1,96 @@
+.header {
+    background-color: var(--background-secondary);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px var(--shadow-primary);
+    border-bottom: 1px solid var(--border-primary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: var(--text-primary);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--text-accent);
+    text-decoration: none;
+}
+
+.navAndUser {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    padding: 8px 5px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.navLink:hover {
+    color: var(--text-primary);
+}
+
+.navLink.active {
+    color: var(--text-accent);
+    border-bottom-color: var(--text-accent);
+}
+
+.userActions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.userName {
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
+.themeToggle {
+    background: none;
+    border: none;
+    font-size: 1.4em;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+    color: var(--text-secondary);
+}
+
+.themeToggle:hover {
+    color: var(--text-primary);
+}
+
+.logoutButton {
+    padding: 8px 15px;
+    background-color: var(--background-accent);
+    color: var(--text-on-accent);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.logoutButton:hover {
+    background-color: color-mix(in srgb, var(--background-accent) 85%, black);
+}
